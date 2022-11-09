@@ -1,0 +1,10 @@
+###
+https://api.github.com/users/jeantsai
+
+
+###
+https://github.com/login/oauth/authorize?response_type=code&client_id=e7dcfda17e92dfc11164&state=4PChLRQ1MucvwmRjFwXGWvfCK2PliQQq4puBjhwo&redirect_uri=http://localhost:3000/cb&scope=
+
+
+###
+POST https://github.com/login/oauth/access_token?client_id=e7dcfda17e92dfc11164&code=b17829433060ead91eb2&client_secret=6fa0e1c31a9edda8a46b5b07fa777e0afb1c56fc&redirect_uri=http://localhost:3000/cb

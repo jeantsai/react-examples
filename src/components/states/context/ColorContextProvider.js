@@ -9,6 +9,8 @@ export const useColors = () => useContext(ColorContext)
 const ColorContextProvider = ({ children }) => {
   const [colors, setColors] = useState(colorData)
 
+  const addColorToState = color => setColors(allColors => [color, ...allColors])
+
   const addColor = (title, color) => {
     const newColors = [
       ...colors,
@@ -19,7 +21,13 @@ const ColorContextProvider = ({ children }) => {
         rating: 0,
       }
     ]
-    setColors(newColors)
+    // setColor(newColors)
+    addColorToState({
+      id: uuidv4(),
+      title: title,
+      color: color,
+      rating: 0,
+    })
   }
 
   const deleteColor = id => {

@@ -8,6 +8,14 @@ In the project directory, you can run:
 
 ### `npm start`
 
+Before running this script, please export the following environment variables, and start the proxy to avoid CORS checking.
+
+```
+export TOKEN_URL=
+export CLIENT_SECRET=
+yarn proxy
+```
+
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
